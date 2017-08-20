@@ -1,0 +1,15 @@
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\obj\Debug\WindowsApp1.vbprojResolveAssemblyReference.cache
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\obj\Debug\WindowsApp1.Form1.resources
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.Cache
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\bin\Debug\WindowsApp1.exe
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\bin\Debug\WindowsApp1.pdb
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\bin\Debug\WindowsApp1.xml
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\obj\Debug\WindowsApp1.exe
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\obj\Debug\WindowsApp1.xml
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\obj\Debug\WindowsApp1.pdb
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\bin\Debug\WindowsApp1.exe.manifest
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\bin\Debug\WindowsApp1.application
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\obj\Debug\WindowsApp1.exe.manifest
+C:\Users\phill\AppData\Local\Temporary Projects\WindowsApp1\obj\Debug\WindowsApp1.application

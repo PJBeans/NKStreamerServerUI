@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="NKStreamerUI.exe" version="1.0.0.3" publicKeyToken="bf124d8087dd03b2" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="NKStreamerUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="NKStreamerUI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NKStreamerUI.exe" size="37832">
+      <assemblyIdentity name="NKStreamerUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>G/IMfXYPvmk0YgVLSI/QpZhqPygbEVKwbHlp1QWn8I0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="NKStreamerUI.exe.config" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j5XMowm9qYcyNWR87Ke1KpLLXBlaYAR38CaZywZFE9o=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PJS-DESKTOP\phill" issuerKeyHash="ae07c7f999349d198021366d6c2f8e0bf7385719" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QTATMDDrNJ7ZssscN7UeorlPV5p/4m4V0di8XghSxT4=</DigestValue></Reference></SignedInfo><SignatureValue>Ab7xMEk0fI5bC0cHeiyws3x1vJx2OKa4vxUSAZZR8xgJW+6ZAEbljpvjA39jdnrFHoRIQxCP3DlE4MLrUn2HVuFahZmTIXmitXjL8XemSrDYr2IjeOIIz2eCO/j9d7nlUXGYtysJSqtWSqEtvJlTKOXjnRXRi874jU/o4pZLo4M=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>raHk6VfeUSp4IMzKlHQa2FEm/JzibJjmTSHoG2j9swyvpEGkvcde1fN3iWk+KgcmVaCiBrpJqskSJATW4qO3EjNonoKzq0lsByddhNj2Nl5lVFmreOoi84BRQQ6Vb7KJVfWKkHJ4GNNlhuhZRz0FXFaiUiSPhleQIRSDlxR2Q3U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3ec552085ebcd8d1156ee27f9a574fb9a21eb5371ccbb2d99e34eb3030133041" Description="" Url=""><as:assemblyIdentity name="NKStreamerUI.exe" version="1.0.0.3" publicKeyToken="bf124d8087dd03b2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PJS-DESKTOP\phill</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>l4qZghyUO5tVx0TvluyATVCsoQb2MhHTokgznO7Jk+8=</DigestValue></Reference></SignedInfo><SignatureValue>KcKamz+hL4ztwVmbzGkKQY5a29h89tUaG8XQqsFlkhTfeFSD/odWtODDPwO0pZ/1tAWdkc8HjY4X/oD9Y7yEtuoAz2ej7ivkRQkr5vqCbRAvkDo9i39pEs6Qb3PDogxNwKQv0tCB4Is82jq4WMv70XFgCjpLh8t3DGS7WBUPXa0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>raHk6VfeUSp4IMzKlHQa2FEm/JzibJjmTSHoG2j9swyvpEGkvcde1fN3iWk+KgcmVaCiBrpJqskSJATW4qO3EjNonoKzq0lsByddhNj2Nl5lVFmreOoi84BRQQ6Vb7KJVfWKkHJ4GNNlhuhZRz0FXFaiUiSPhleQIRSDlxR2Q3U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQVXZ+zakgjIBCGOrgtR790TANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIAUABKAFMALQBEAEUAUwBLAFQATwBQAFwAcABoAGkAbABsMB4XDTE3MDgyMDE2MDY0MloXDTE4MDgyMDIyMDY0MlowLTErMCkGA1UEAx4iAFAASgBTAC0ARABFAFMASwBUAE8AUABcAHAAaABpAGwAbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAraHk6VfeUSp4IMzKlHQa2FEm/JzibJjmTSHoG2j9swyvpEGkvcde1fN3iWk+KgcmVaCiBrpJqskSJATW4qO3EjNonoKzq0lsByddhNj2Nl5lVFmreOoi84BRQQ6Vb7KJVfWKkHJ4GNNlhuhZRz0FXFaiUiSPhleQIRSDlxR2Q3UCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCPvZvvFohNcZsVw4Xo8uYrViIdTUuvzPmf698iFdpkhYhmLYzY4y0MgV3f4/wUeOlK/STMU4snXk3pZvGPcKEmjASwwpZUylpcILW5BPttn+wCY1fYb1cqsSRT7h5FD1cN3wDuSA0AbbfeLVqO2dUbvuT04wLq6IUKR24ENqTWjg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
