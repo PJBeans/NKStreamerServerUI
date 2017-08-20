@@ -1,15 +1,16 @@
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamerUI.exe.config
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamerUI.exe.manifest
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamerUI.application
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamerUI.exe
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamerUI.pdb
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamerUI.xml
 C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerUI.vbprojResolveAssemblyReference.cache
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\WindowsApp1.Form1.resources
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\WindowsApp1.Resources.resources
 C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerUI.vbproj.GenerateResource.Cache
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerUI.exe.manifest
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerUI.application
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerUI.exe
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerUI.xml
-C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerUI.pdb
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamer Server.exe.config
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamer Server.exe.manifest
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamer Server.application
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamer Server.exe
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamer Server.pdb
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\bin\Debug\NKStreamer Server.xml
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerServerUI.Form1.resources
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerServerUI.Form2.resources
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamerServerUI.Resources.resources
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamer Server.exe.manifest
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamer Server.application
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamer Server.exe
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamer Server.xml
+C:\Users\phill\Documents\Visual Studio 2017\Projects\NKStreamerUI\NKStreamerUI\obj\Debug\NKStreamer Server.pdb

@@ -1,4 +1,5 @@
-﻿Imports System.Text
+﻿Imports System.Net
+Imports System.Text
 
 Public Class Form1
     Dim drag As Boolean
@@ -59,16 +60,23 @@ Public Class Form1
     End Sub
 
     Private Sub GetIPAddress()
+
         Dim strHostName As String
-        Dim strIPAddress As String
-        Dim strIPAddress2
+        Dim strIPAddress
+        Dim strIPAddress2 As String
+        Dim strIPAddress3 As String
+
+
+
 
         strHostName = System.Net.Dns.GetHostName()
         strIPAddress = System.Net.Dns.GetHostByName(strHostName).AddressList(0).ToString()
         strIPAddress2 = System.Net.Dns.GetHostByName(strHostName).AddressList(1).ToString()
 
+
         Label1.Text = ("IP Address: " & strIPAddress)
         Label3.Text = ("IP Address: " & strIPAddress2)
+        Debug.Print(strIPAddress3)
 
     End Sub
 
@@ -134,5 +142,21 @@ Public Class Form1
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
+    End Sub
+
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ShowAllIPAddressesToolStripMenuItem_Click() Handles ShowAllIPAddressesToolStripMenuItem.Click
+        Form2.Show()
+    End Sub
+
+    Private Sub More_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles More.Opening
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        Me.More.Show(Me.Label6, Me.Label6.PointToClient(Cursor.Position))
     End Sub
 End Class
