@@ -1,16 +1,33 @@
-﻿Imports System.Net
+﻿Imports System.IO
+Imports System.Net
 Imports System.Text
 
 Public Class Form1
+
+    'Window Movement'
     Dim drag As Boolean
     Dim mousex As Integer
     Dim mousey As Integer
+
+
 
     Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
     End Sub
 
 
     Private Sub Button1_Click() Handles Button1.Click
+        'Save server.cfg, even if at default values'
+        Dim reader As New StreamReader("servertmp.cfg")
+        Dim writer As New StreamWriter("server.cfg")
+
+
+
+
+        Dim s = reader.ReadToEnd().Replace("thread_num = ", "thread_num = " & TextBox2.Text)
+        writer.Write(s)
+        writer.Close()
+        reader.Close()
+
         Dim sb = New StringBuilder()
         Dim psi = New ProcessStartInfo() With
     {
@@ -34,6 +51,7 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Button2.Show()
         Button1.Hide()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -48,11 +66,34 @@ Public Class Form1
         For i As Integer = 0 To proc.Count - 1
             proc(i).Kill()
         Next i
+
     End Sub
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         StopServer()
+        Dim reader As New StreamReader("servertmp.cfg")
+
+        Dim writer As New StreamWriter("server.cfg")
+
+
+
+        Dim s = reader.ReadToEnd().Replace("thread_num = " & TextBox2.Text, "thread_num = ")
+        writer.Write(s)
+        reader.Close()
+        writer.Close()
         Me.Close()
 
+    End Sub
+    Private Sub ResetThreadCount()
+        Dim reader As New StreamReader("servertmp.cfg")
+
+        Dim writer As New StreamWriter("server.cfg")
+
+
+
+        Dim s = reader.ReadToEnd().Replace("thread_num = ", "thread_num = 3")
+        writer.Write(s)
+        reader.Close()
+        writer.Close()
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
@@ -61,22 +102,24 @@ Public Class Form1
 
     Private Sub GetIPAddress()
 
-        Dim strHostName As String
-        Dim strIPAddress
-        Dim strIPAddress2 As String
-        Dim strIPAddress3 As String
+        Dim sb = New StringBuilder()
+        Dim psi = New ProcessStartInfo() With
+    {
+            .WorkingDirectory = "",
+            .FileName = "ip_tool.bat",
+            .CreateNoWindow = True,
+            .RedirectStandardOutput = True,
+            .RedirectStandardInput = True,
+            .UseShellExecute = False
+    }
 
-
-
-
-        strHostName = System.Net.Dns.GetHostName()
-        strIPAddress = System.Net.Dns.GetHostByName(strHostName).AddressList(0).ToString()
-        strIPAddress2 = System.Net.Dns.GetHostByName(strHostName).AddressList(1).ToString()
-
-
-        Label1.Text = ("IP Address: " & strIPAddress)
-        Label3.Text = ("IP Address: " & strIPAddress2)
-        Debug.Print(strIPAddress3)
+        Dim installbatOut = New Process()
+        installbatOut.StartInfo = psi
+        AddHandler installbatOut.OutputDataReceived, Function(sender, args) sb.AppendLine(args.Data)
+        installbatOut.Start()
+        installbatOut.BeginOutputReadLine()
+        installbatOut.WaitForExit(100)
+        Label1.Text = sb.ToString()
 
     End Sub
 
@@ -91,7 +134,7 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Button2.Hide()
         GetIPAddress()
-        ReadTextConfig()
+
     End Sub
 
     'Window Movement'
@@ -112,25 +155,26 @@ Public Class Form1
     Private Sub Panel1_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseUp
         drag = False
     End Sub
-    Private Sub ReadTextConfig()
-        Dim configServer As New IO.StreamReader("server" & ".cfg")
-        RichTextBox1.Text = configServer.ReadToEnd()
-        configServer.Close()
-    End Sub
-    Private Sub SaveServerConfig()
-        Dim configServerSave As New IO.StreamWriter("server" & ".cfg")
-        configServerSave.Write(RichTextBox1.Text)
-        configServerSave.Close()
 
-    End Sub
 
-    Private Sub RichTextBox1_TextChanged_1(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
+
+    Private Sub RichTextBox1_TextChanged_1(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
         TextBox1.Text = "Saved server.cfg, stopped server."
-        SaveServerConfig()
+
+        Dim reader As New StreamReader("servertmp.cfg")
+        Dim writer As New StreamWriter("server.cfg")
+
+
+
+
+        Dim s = reader.ReadToEnd().Replace("thread_num = ", "thread_num = " & TextBox2.Text)
+        writer.Write(s)
+        writer.Close()
+        reader.Close()
         StopServer()
         Button1.Show()
         Button2.Hide()
@@ -158,5 +202,19 @@ Public Class Form1
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
         Me.More.Show(Me.Label6, Me.Label6.PointToClient(Cursor.Position))
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub Button4_Click_2(sender As Object, e As EventArgs)
+
+        Dim reader As New StreamReader("server.cfg")
+        Dim allLines = reader.ReadLine()
+        If allLines.StartsWith("thread_num = ") Then
+            TextBox2.Text = allLines
+        End If
+
     End Sub
 End Class

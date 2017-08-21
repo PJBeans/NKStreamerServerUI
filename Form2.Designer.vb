@@ -29,6 +29,7 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,9 +73,9 @@ Partial Class Form2
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Label1.Location = New System.Drawing.Point(12, 37)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 20)
+        Me.Label1.Size = New System.Drawing.Size(374, 40)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "WARNING: Manually modifying server.cfg can result" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "in a corupt config file!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Button2
         '
@@ -84,7 +85,7 @@ Partial Class Form2
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(154, 35)
         Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Exit"
+        Me.Button2.Text = "Save"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'PictureBox2
@@ -97,12 +98,22 @@ Partial Class Form2
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
         '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.RichTextBox1.Location = New System.Drawing.Point(16, 82)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(358, 224)
+        Me.RichTextBox1.TabIndex = 13
+        Me.RichTextBox1.Text = ""
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(401, 359)
+        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
@@ -124,4 +135,5 @@ Partial Class Form2
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class

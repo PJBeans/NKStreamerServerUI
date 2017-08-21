@@ -34,13 +34,13 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.More.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,13 +86,13 @@ Partial Class Form1
         '
         Me.More.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowAllIPAddressesToolStripMenuItem})
         Me.More.Name = "More"
-        Me.More.Size = New System.Drawing.Size(188, 26)
+        Me.More.Size = New System.Drawing.Size(219, 26)
         '
         'ShowAllIPAddressesToolStripMenuItem
         '
         Me.ShowAllIPAddressesToolStripMenuItem.Name = "ShowAllIPAddressesToolStripMenuItem"
-        Me.ShowAllIPAddressesToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
-        Me.ShowAllIPAddressesToolStripMenuItem.Text = "Show all IP Addresses"
+        Me.ShowAllIPAddressesToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
+        Me.ShowAllIPAddressesToolStripMenuItem.Text = "Manually modify server.cfg"
         '
         'PictureBox1
         '
@@ -141,19 +141,9 @@ Partial Class Form1
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label1.Location = New System.Drawing.Point(12, 196)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(143, 17)
+        Me.Label1.Size = New System.Drawing.Size(158, 17)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Loading IP Address..." & Global.Microsoft.VisualBasic.ChrW(13)
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(12, 223)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(143, 17)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Loading IP Address..."
+        Me.Label1.Text = "Loading IP Addresses..."
         '
         'Panel3
         '
@@ -172,32 +162,13 @@ Partial Class Form1
         Me.Label4.Size = New System.Drawing.Size(426, 68)
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "Please use one of those IP in your 3DS client to connect to server:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(normally it" &
-    " should be the last one)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If neither work, go to ""More"" > ""Show all IP Address" &
-    "es""" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.RichTextBox1.Location = New System.Drawing.Point(15, 243)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(423, 228)
-        Me.RichTextBox1.TabIndex = 12
-        Me.RichTextBox1.Text = ""
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 477)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(208, 13)
-        Me.Label5.TabIndex = 13
-        Me.Label5.Text = "You can edit the server configuration here."
+    " should be the first one)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button3.Location = New System.Drawing.Point(284, 477)
+        Me.Button3.Location = New System.Drawing.Point(460, 528)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(154, 35)
         Me.Button3.TabIndex = 14
@@ -215,18 +186,45 @@ Partial Class Form1
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "More"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label3.Location = New System.Drawing.Point(12, 381)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(71, 20)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Threads:"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.TextBox2.Location = New System.Drawing.Point(89, 381)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 16
+        Me.TextBox2.Text = "3"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.Panel4.Location = New System.Drawing.Point(0, 365)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(626, 10)
+        Me.Panel4.TabIndex = 11
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(626, 594)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button2)
@@ -255,13 +253,13 @@ Partial Class Form1
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label4 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
-    Friend WithEvents Label5 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents More As ContextMenuStrip
     Friend WithEvents ShowAllIPAddressesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label6 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Panel4 As Panel
 End Class
